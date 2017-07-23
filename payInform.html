@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>输入支付要素</title>
+    <link rel="stylesheet" href="./css/weui.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body ontouchstart>
+	<div class="page__bd_spacing">
+	    <div class="bank_logo">
+			<img class="weui-vcode-img" src="./images/pic/minsheng.png">
+	    </div>
+	    <div class="weui-cells_form bank_inform_form">
+	        <div class="weui-cell">
+	            <div class=""><label class="weui-label">金额</label></div>
+	            <div class="weui-cell__bd bank_money_entry">
+	                <i>&yen;</i><input class="weui-input" type="number" placeholder="请输入金额">
+	            </div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class="">
+	                <label class="weui-label">银行卡</label>
+	            </div>
+	            <div class="weui-cell__bd">
+	                <input class="weui-input" type="number" placeholder="请输入银行卡号">
+	            </div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class=""><label for="" class="weui-label">手机号</label></div>
+	            <div class="weui-cell__bd">
+	                <input class="weui-input" type="tel" placeholder="请输入手机号">
+	            </div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class=""><label for="" class="weui-label">CVN2</label></div>
+	            <div class="weui-cell__bd">
+	                <input class="weui-input" type="number" value="" placeholder="请输入信用卡背面后3位">
+	            </div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class=""><label class="weui-label">有效期</label></div>
+	            <div class="weui-cell__bd">
+	                <input class="weui-input" type="number" placeholder="卡有效期（月月年年）">
+	            </div>
+	        </div>
+	        <div class="weui-cell">
+                <div class="">
+                    <label class="weui-label">验证码</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" placeholder="请输入验证码">
+                </div>
+                <div class="weui-cell__ft">
+                    <button class="weui-vcode-btn bank_btn">获取</button>
+                </div>
+            </div>
+		    <div class="weui-btn-area">
+		        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+		        <span class="bank_form_preview">本次交易由民生银行提供支持</span>
+		    </div>
+	    </div>
+	</div>
+    <script src="./js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+</body>
+</html>

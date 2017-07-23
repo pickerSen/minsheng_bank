@@ -1,0 +1,148 @@
+/***
+	weui选择器样式
+***/
+.weui-btn {
+	margin-top: 50px;
+}
+
+/***
+	自定义样式
+***/
+.icon-box {
+	padding-top: 40px;
+	text-align: center;
+}
+.icon-box__ctn {
+	margin-top: 20px;
+}
+.page__bd_spacing {
+	padding: 0 10px;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+	/**
+		bank_ 样式
+	**/
+.bank_logo {
+	padding: 20px 0;
+	width: 200px;
+}
+.bank_logo>img {
+	width: 100%;
+	height: 100%;
+}
+.bank_input_bg {
+	height: 100vh;
+	background-color: rgb(244,244,244);
+}
+.bank_money {
+	padding: 20px 10px;
+    background-color: #FFFFFF;
+}
+.bank_money>h4 {
+	margin-bottom: 10px;
+	color: #373737;
+}
+.bank_money>.bank_money_entry {
+	position: relative;
+	border-bottom: 1px solid #979797;
+	font-size: 30px;
+	font-style: normal;
+}
+.bank_money_entry>i {
+	position: absolute;
+	left: 20px;
+	font-family:Arial;
+}
+.bank_money>.bank_money_entry>input {
+	padding-left: 50px;
+}
+.bank_form_preview {
+	display: block;
+	margin-top: 15px;
+	text-align: right;
+	font-size: 12px;
+	color: #C6B058;
+}
+.bank_tips, .bank_tips>h5 {
+	font-size: 12px;
+}
+
+	/**
+		payInform.html
+	**/
+.bank_inform_form {
+	font-size: 14px;
+}
+.bank_inform_form .bank_money_entry {
+	position: relative;
+}
+.bank_inform_form .bank_money_entry>i {
+	position: absolute;
+	left: 0;
+}
+.bank_inform_form .bank_money_entry>input {
+	padding-left: 15px;
+}
+.bank_inform_form label {
+	width: 50px;
+}
+button.bank_btn {
+	height: 26px;
+	line-height: 26px;
+	background-color: #EC940F;
+	font-size: 14px;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+	/**
+		payCard.html
+	**/
+.bank_card, .bank_addCard {
+	position: relative;
+    display: -webkit-box;
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-box-align: center; 
+   	-webkit-align-items: center;
+    align-items: center;
+	padding: 0;
+	padding-bottom: 25px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background: #017684;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+.bank_addCard {
+	padding-bottom: 5px;
+	background-color: #0190EE;
+}
+.bank_card_logo, .bank_addCard_logo {
+	position: relative;
+	margin: 10px;
+}
+.bank_card_logo>img, .bank_addCard_logo>img {
+	display: block;
+  	width: 35px;
+	border-radius: 5px;
+}
+.bank_addCard_content {
+	margin-top: 10px;
+	margin-left: 35px;
+}
+.bank_card_name, .bank_addCard_name {
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.bank_card_type, .bank_addCard_desc {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.bank_card_number {
+	position: absolute;
+	right: 10px;
+	display: block;
+	font-size: 18px;
+	text-align: right;
+	letter-spacing: 0.6px;
+}

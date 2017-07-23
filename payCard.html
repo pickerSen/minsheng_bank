@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>选择支付卡</title>
+    <link rel="stylesheet" href="./css/weui.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body ontouchstart>
+    <div class="page__bd_spacing">
+        <div>
+            <div class="bank_card">
+                <div class="bank_card_logo">
+                    <img src="images/pic_160.png">
+                </div>
+                <div class="weui-cell__bd">
+                    <p class="bank_card_name">平安银行股份有限公司</p>
+                    <p class="bank_card_type">信用卡</p>
+                    <span class="bank_card_number">8888666699998888</span>
+                </div>
+            </div>
+            <div class="bank_card">
+                <div class="bank_card_logo">
+                    <img src="images/pic_160.png">
+                </div>
+                <div class="weui-cell__bd">
+                    <p class="bank_card_name">平安银行股份有限公司</p>
+                    <p class="bank_card_type">信用卡</p>
+                    <span class="bank_card_number">8888666699998888</span>
+                </div>
+            </div>
+        </div> 
+        <a href="javascript:addCard();" class="weui-media-box weui-media-box_appmsg bank_addCard">
+            <div class="bank_addCard_logo">
+                <img src="images/pic_160.png">
+            </div>
+            <div class="weui-media-box__bd bank_addCard_content">
+                <h4 class="weui-media-box__title bank_addCard_name">绑定支付卡</h4>
+                <p class="weui-media-box__desc bank_addCard_desc">快速绑定 方便快捷</p>
+            </div>
+        </a>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script type="text/javascript">
+
+        function addCard(){
+            var bankCard = $(".bank_card").parent();
+            var bankCardStr = "<div class=\"bank_card\">"
++ "                    <div class=\"bank_card_logo\">"
++ "                        <img src=\"images/pic_160.png\">"
++ "                    </div>"
++ "                    <div class=\"weui-cell__bd\">"
++ "                        <p class=\"bank_card_name\">平安银行股份有限公司</p>"
++ "                        <p class=\"bank_card_type\">信用卡</p>"
++ "                        <span class=\"bank_card_number\">8888666699998888</span>"
++ "                    </div>"
++ "</div>";
+            bankCard.append(bankCardStr);
+        }
+    </script>
+</body>
+</html>

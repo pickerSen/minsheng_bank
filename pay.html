@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>输入金额</title>
+    <link rel="stylesheet" href="./css/weui.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body ontouchstart>
+	<div class="page__bd_spacing bank_input_bg">
+	    <div class="bank_logo">
+			<img class="weui-vcode-img" src="./images/pic/minsheng.png">
+	    </div>
+	    <div class="weui-cells_form">
+	        <div class="bank_money">
+	            <h4>支付金额</h4>
+	            <div class="weui-flex bank_money_entry">
+	               <i>&yen;</i><input class="weui-flex__item weui-input" type="number" placeholder="0.00">
+	            </div>
+	        </div>
+	        <a href="javascript:;" class="weui-btn weui-btn_primary">支付</a>
+	        <span class="bank_form_preview">本次交易由民生银行提供支持</span>
+	        <section class="bank_tips">
+	            <h5>温馨提示：</h5>
+	            <p>
+	                D0实时到账时间为（05：00-23：00），非实际到账时间的交易，可于下一个工作日12点后从个人中心提现。（比如周六晚上23点的交易，需到周一上午12点后在个人中心进行提现）
+	            </p>
+	        </section>
+	    </div>
+
+    </div>
+
+    <script src="./js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+</body>
+</html>
