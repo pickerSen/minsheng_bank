@@ -87,12 +87,17 @@
 	width: 50px;
 }
 button.bank_btn {
+	width: 50px;
 	height: 26px;
 	line-height: 26px;
 	background-color: #EC940F;
 	font-size: 14px;
 	color: #FFFFFF;
 	border-radius: 5px;
+}
+button.bank_btn_gray {
+    background-color: buttonface;
+    color: graytext;
 }
 	/**
 		payCard.html
